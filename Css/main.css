@@ -1,0 +1,253 @@
+:root{
+--background-color:#0F172A;
+--Surface-Color:#1E293B;
+--Primary-Text-Color:#F8FAFC;
+--Accent-Color:#38BDF8;
+--Muted-Text: #94A3B8;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    color: var(--Muted-Text);
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em; 
+    background: linear-gradient(to right, var(--Primary-Text-Color), var(--Accent-Color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar{
+    background-color: rgba(15, 23, 42, 0.8);
+}
+
+.navbar a{
+    color: var(--Primary-Text-Color);
+    font-size: 1.2rem;
+    transition: .3s color;
+}
+
+.navbar a:hover{
+    color: var(--Accent-Color);
+}
+
+#Home{
+    height: 100dvh;
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home h2{
+    color: var(--Accent-Color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#Home p{
+    max-width: 50ch;
+    font-size: 1.15rem;
+    color: var(--Muted-Text);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+#Home ul a{
+    font-size: 2rem;
+    color: var(--Muted-Text);
+    transition: .3s;
+}
+
+#Home ul a:hover{
+    color: var(--Accent-Color);
+}
+
+#About{
+    background-color: var(--background-color);
+    padding-bottom: 70px;
+}
+
+#About h2{
+    color: var(--Accent-Color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#About p{
+font-size: 1.2rem;
+}
+
+#About img{
+    max-width: 100%;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+}
+
+#Skills {
+    background-color: var(--background-color);
+    padding: 100px 0;
+}
+
+#Skills h2{
+    color: var(--Accent-Color);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skill-card {
+    background-color: var(--Surface-Color);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--Accent-Color);
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    color: var(--Primary-Text-Color);
+    margin: 0;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--Accent-Color);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+}
+
+#Projects{
+    background-color: var(--background-color);
+    padding: 100px 0;
+}
+
+#Projects h2{
+    color: var(--Accent-Color);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#Projects .project-card{
+    padding: 50px 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .3s all;
+}
+#Projects .project-card:hover{
+    border: var(--Accent-Color) solid 1px;
+}
+
+#Projects .project-card img{
+    object-fit: cover;
+    width: 600px;
+    max-width: 100%;
+}
+
+#Projects .project-card h3{
+    color: var(--Accent-Color);
+    margin-top: 20px;
+}
+
+#Projects .project-card a{
+    text-decoration: none;
+    color: var(--Accent-Color);
+}
+
+
+#Contact{
+    background-color: var(--background-color);
+    padding: 100px 0;
+}
+
+#Contact h2{
+    color: var(--Accent-Color);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#Contact p{
+    font-size: 1.1rem;
+}
+
+#Contact i{
+    color: var(--Muted-Text);
+    font-size: 1.4rem;
+    transition: .3s;
+}
+
+#Contact i:hover{
+    color: var(--Accent-Color);
+}
+
+#Contact p,
+#Contact label{
+    margin-bottom: 10px;
+}
+
+#Contact input,
+#Contact textarea{
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--Accent-Color);
+    border: var(--Accent-Color) solid 1px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 12px 15px; /* Adds space inside the box */
+    border-radius: 8px;
+}
+
+#Contact textarea{
+    height: 130px;
+}
+
+#Contact button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: var(--Accent-Color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--Muted-Text);
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+footer ul a{
+    font-size: 1.4rem;
+    color: var(--Muted-Text);
+    transition: .3s;
+}
+
+footer ul a:hover{
+    color: var(--Accent-Color);
+}
