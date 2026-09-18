@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const contactForm = document.querySelector('form');
 
 contactForm.addEventListener('submit', async (e) => {
@@ -19,4 +20,27 @@ contactForm.addEventListener('submit', async (e) => {
     } else {
         alert('Oops! There was a problem submitting your form');
     }
+=======
+const contactForm = document.querySelector('form');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(contactForm);
+    
+    const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        alert('Thanks for your message! I will get back to you soon.');
+        contactForm.reset();
+    } else {
+        alert('Oops! There was a problem submitting your form');
+    }
+>>>>>>> d960408e29af7750c528b7da8d3c5c2e3ef43b62
 });
